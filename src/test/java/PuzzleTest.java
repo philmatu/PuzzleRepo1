@@ -45,4 +45,11 @@ public class PuzzleTest {
 		assertEquals("cfjkpquvwxz", output);
     }
 	
+	@Test 
+    public void testNull() {
+		Puzzle p = new Puzzle();
+		String output = p.getMissingLetters(null);
+		assertEquals("abcdefghijklmnopqrstuvwxyz", output);
+    }
+	
 }
