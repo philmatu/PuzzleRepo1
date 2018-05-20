@@ -8,8 +8,9 @@ public class Puzzle {
 	 * java 8 streams tend to be more efficient with smaller sentences and repetion, 
 	 * thus why I've chosen this strategy.  I've also gone with primitive types
 	 * because there won't be much performance loss in terms of benchmarking by
-	 * going through a few more characters in a string that's 50 characters max to begin with,
-	 * remember the alphabet is only 26 characters.  
+	 * going through a few more characters in a string that's 50 words max to begin with,
+	 * remember the alphabet is only 26 characters and the average word is maybe 7 or 8 characters
+	 * long.
 	 * 
 	 * In a larger sentence input, reflection will likely beat out streams in terms of benchmarks
 	 * additionally, instead of going the missing integer route, it would be better to have an
